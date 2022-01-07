@@ -14,9 +14,9 @@ class Solution:
                 if current_char == '{':
                     if char != "}":
                         return False
-                    if current_char == '[':
-                        if char != "]":
-                            return False
+                if current_char == '[':
+                    if char != "]":
+                        return False
         if stack:
             return False
         return True
